@@ -18,7 +18,7 @@ if(isset($_POST['btnEditar']))
 
 if(isset($_POST['btnEditar2']))
 {
- $nuevoEstudiante->EditarMascota($_POST['txtnombre'],$_POST['idmascota']); 
+ 
  header('Location: listar.php');
         
 }
