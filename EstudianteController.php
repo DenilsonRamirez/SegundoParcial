@@ -11,14 +11,13 @@ if(isset($_POST['btnGuardar']))
 else
 if(isset($_POST['btnEditar']))
 {
- $nuevoEstudiante->EditarEstudiante($_POST['txtvacuna'],$_POST['idMascota']); 
- header('Location: listar.php');
+header('Location: listar.php');
         
 }
 
 if(isset($_POST['btnEditar2']))
 {
- 
+ $nuevoEstudiante->EditarMascota($_POST['txtnombre'],$_POST['idmascota']); 
  header('Location: listar.php');
         
 }
